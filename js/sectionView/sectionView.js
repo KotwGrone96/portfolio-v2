@@ -17,6 +17,12 @@ const handleActiveLinkAndRoute = (id) => {
         activeLink();
         return;
       }
+      if (URLPathname !== '/' && firstLoad) {
+        firstLoad = false;
+        router('/');
+        activeLink();
+        return;
+      }
       router(window.location.pathname);
       activeLink();
       firstLoad = false;
@@ -27,6 +33,11 @@ const handleActiveLinkAndRoute = (id) => {
       activeLink();
       return;
     }
+    // case 'skills': {
+    //   router(id);
+    //   activeLink();
+    //   return;
+    // }
     case 'portfolio': {
       router(id);
       activeLink();
@@ -56,6 +67,7 @@ let options = {
 };
 
 let observer = new IntersectionObserver(handleSectionView, options);
+
 sections.forEach((section) => {
   observer.observe(section);
 });

@@ -11,6 +11,10 @@ navBtnsLinks.forEach((btn) => {
         window.scrollTo(0, sections[1].offsetTop - 16);
         return;
       }
+      // case 'skills': {
+      //   window.scrollTo(0, sections[2].offsetTop - 16);
+      //   return;
+      // }
       case 'portfolio': {
         window.scrollTo(0, sections[2].offsetTop - 16);
         return;
@@ -38,6 +42,10 @@ window.addEventListener('load', () => {
       window.scrollTo(0, scrollYvalues[1]);
       return;
     }
+    // case '/skills': {
+    //   window.scrollTo(0, scrollYvalues[2]);
+    //   return;
+    // }
     case '/portfolio': {
       window.scrollTo(0, scrollYvalues[2]);
       return;
