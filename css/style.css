@@ -11,6 +11,7 @@
   list-style: none;
   color: #ffffff;
   font-family: 'Barlow', sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -29,6 +30,10 @@ body {
 .navbar-desktop,
 .resume-btn {
   display: none;
+}
+
+section {
+  min-height: 100vh;
 }
 
 /* ESTILOS DE NAV BUTTON Y NAV RESPONSIVE */
