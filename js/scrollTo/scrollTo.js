@@ -1,8 +1,28 @@
 import { navBtnsLinks, sections } from '../DOMElements/DOMElements.js';
 
-navBtnsLinks.forEach((btn, index) => {
+navBtnsLinks.forEach((btn) => {
   btn.addEventListener('click', () => {
-    window.scrollTo(0, sections[index].offsetTop - 16);
+    switch (btn.dataset.section) {
+      case 'home': {
+        window.scrollTo(0, sections[0].offsetTop - 16);
+        return;
+      }
+      case 'about': {
+        window.scrollTo(0, sections[1].offsetTop - 16);
+        return;
+      }
+      case 'portfolio': {
+        window.scrollTo(0, sections[2].offsetTop - 16);
+        return;
+      }
+      case 'contact': {
+        window.scrollTo(0, sections[3].offsetTop - 16);
+        return;
+      }
+
+      default:
+        return;
+    }
   });
 });
 
