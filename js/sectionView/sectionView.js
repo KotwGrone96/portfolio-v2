@@ -63,7 +63,7 @@ const handleSectionView = (entries) => {
 };
 
 let options = {
-  threshold: 0.8,
+  threshold: 0.5,
 };
 
 let observer = new IntersectionObserver(handleSectionView, options);
