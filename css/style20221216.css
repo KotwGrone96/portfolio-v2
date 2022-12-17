@@ -27,6 +27,10 @@ body {
   position: relative;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 .navbar-desktop,
 .resume-btn {
   display: none;
@@ -202,7 +206,7 @@ section h2::after {
   color: var(--green);
 }
 
-.menu-item button {
+.menu-item .btn-download {
   background-color: var(--green);
   display: block;
   margin: 0 auto;
@@ -214,9 +218,10 @@ section h2::after {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  text-align: center;
 }
 
-.menu-item button:hover {
+.menu-item .btn-download:hover {
   background-color: #8cd03e;
 }
 
@@ -348,10 +353,10 @@ hr {
     display: block;
     padding: 25px 0 8px;
   }
-  .resume-btn button {
+  .resume-btn a {
     background-color: var(--green);
     display: block;
-    margin: 0 auto;
+
     padding: 10px 16px;
     outline: none;
     border: none;
@@ -360,8 +365,10 @@ hr {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    width: 200px;
+    text-align: center;
   }
-  .resume-btn button:hover {
+  .resume-btn a:hover {
     background-color: #8cd03e;
   }
 }
@@ -851,6 +858,7 @@ hr {
   font-weight: 500;
   transition: all 0.3s;
   border-radius: 16px;
+  position: relative;
 }
 
 .form input::placeholder,
@@ -875,6 +883,41 @@ hr {
 }
 .form input[type='submit']:hover {
   background-color: #548f11;
+}
+
+.input-alert {
+  background-color: #e15050;
+  padding: 8px 16px;
+  border-radius: 16px;
+  width: 100%;
+  font-weight: 500;
+  display: none;
+}
+
+.modal-form {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 900;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-msg {
+  width: 250px;
+  padding: 8px 0;
+  background-color: var(--green);
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.5s;
+  transform: translateY(-200%);
+}
+
+.modal-msg p {
+  font-size: 20px;
 }
 
 @media screen and (min-width: 992px) {

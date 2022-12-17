@@ -23,6 +23,7 @@ const activeLink = () => {
 
 linksBtns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
+    if (btn.classList.contains('btn-download')) return;
     e.preventDefault();
     const path = btn.dataset.path;
     router(path);

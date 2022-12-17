@@ -7,16 +7,80 @@
       content="IE=edge"
     />
     <meta
+      property="og:title"
+      content="Nelson Gamero"
+    />
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta
+      property="og:url"
+      content="https://nelsongamerodev.com/"
+    />
+    <meta
+      property="og:image"
+      content="https://nelsongamerodev.com/assets/nelson.jpg"
+    />
+    <meta
+      name="description"
+      content="Soy desarrollador Front-End en busca de ser Full-Stack. Siempre en constante aprendizaje y yendo hacia adelante! Me especializo en el dearrollo web para poder brindar soluciones óptimas a la hora de ayudar a una persona. Mi fortaleza es el Front-End ya que disfruto mucho creando interfaces agradables y llamativas. Una de mis principales tareas, aparte de brindar un aspecto idóneo a una web, es poder potenciar su llegada a más personas, por lo que dedico bastante tiempo a optimizar el SEO  de un proyecto."
+    />
+    <meta
+      name="keywords"
+      content="nelson, gamero, front end, dveloper, javascript, react, hidrugo, react, SEO"
+    />
+    <meta
+      name="author"
+      content="Nelson Gamero"
+    />
+    <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <meta
+      name="twitter:title"
+      content="Nelson Gamero"
+    />
+    <meta
+      name="”twitter:description”"
+      content="Soy desarrollador Front-End en busca de ser Full-Stack. Siempre en constante aprendizaje y yendo hacia adelante! Me especializo en el dearrollo web para poder brindar soluciones óptimas a la hora de ayudar a una persona. Mi fortaleza es el Front-End ya que disfruto mucho creando interfaces agradables y llamativas. Una de mis principales tareas, aparte de brindar un aspecto idóneo a una web, es poder potenciar su llegada a más personas, por lo que dedico bastante tiempo a optimizar el SEO  de un proyecto."
+    />
+    <meta
+      name="twitter:image"
+      content="https://nelsongamerodev.com/assets/nelson.jpg"
+    />
+    <meta
+      name="twitter:site"
+      content="@elGrone96"
+    />
+    <meta
+      name="twitter:creator"
+      content="@elGrone96"
+    />
+    <meta
+      name="twitter:url"
+      content="https://nelsongamerodev.com/"
+    />
     <link
       rel="stylesheet"
-      href="./css/style.css"
+      href="./css/style20221216.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/animation20221216.css"
     />
     <title>Nelson Gamero</title>
   </head>
   <body>
+    <div class="modal-form">
+      <div class="modal-msg">
+        <p>
+          Mensaje enviado correctamente!!! <br />
+          😃😃😃
+        </p>
+      </div>
+    </div>
     <nav class="navbar-desktop">
       <div class="navbar-logo">
         <img
@@ -166,7 +230,13 @@
             >
           </div>
           <div class="menu-item">
-            <button>Descargar CV</button>
+            <a
+              href="./nelson-cv-web.pdf"
+              download
+              class="btn-download"
+              target="_blank"
+              >Descargar CV</a
+            >
           </div>
         </div>
       </nav>
@@ -177,19 +247,25 @@
         >
           <div class="home-main-text">
             <div class="home-text">
-              <span>Hola, mi nombre es</span>
-              <h1>Nelson Gamero</h1>
+              <span class="home-span">Hola, mi nombre es</span>
+              <h1 class="home-h1">Nelson Gamero</h1>
             </div>
             <p>
-              Soy desarrollador Front-End en busca de ser Full-Stack. Me apasiona aprender nuevas
-              tecnologías y sobre todo estar en constante aprendizaje.
-              <span
+              Soy desarrollador Front-End en busca de ser Full-Stack. <br />
+              Siempre en constante aprendizaje y yendo hacia adelante!
+              <!-- <span
                 ><br />
                 " Lo simple es lo importante "</span
-              >
+              > -->
             </p>
             <div class="resume-btn">
-              <button>Descargar CV</button>
+              <a
+                href="./nelson-cv-web.pdf"
+                download
+                class="btn-download"
+                target="_blank"
+                >Descargar CV</a
+              >
             </div>
           </div>
           <div class="home-img">
@@ -525,33 +601,77 @@
             <input
               type="text"
               name="nombre"
+              id="nombre"
               placeholder="Nombre"
               required
+              pattern="^([a-zñáéíóúA-ZÁÉÍÓÚÑ]+[\s]?)+[A-Za-zñÑáéíóúÁÉÍÓÚ]+$"
+              class="input-form"
             />
+            <label
+              class="input-alert"
+              data-labelInput="nombre"
+              for="nombre"
+              >Solo mayúsculas, minúsculas y un espacio entre palabras</label
+            >
             <input
               type="text"
               name="asunto"
+              id="asunto"
               placeholder="Asunto"
               required
+              class="input-form"
+              pattern="^([a-zñáéíóúA-ZÁÉÍÓÚÑ0-9-_]+[\s]?)+[A-Za-zñÑáéíóúÁÉÍÓÚ0-9]+$"
             />
+            <label
+              class="input-alert"
+              data-labelInput="asunto"
+              for="asunto"
+              >Solo mayúsculas, minúsculas, guiones y un espacio entre palabras</label
+            >
             <input
               type="email"
               name="email"
               required
+              id="email"
               placeholder="E-mail"
+              class="input-form"
+              pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
             />
+            <label
+              class="input-alert"
+              data-labelInput="email"
+              for="email"
+              >Ingrese un email válido</label
+            >
             <input
               type="tel"
               name="tel"
               placeholder="Tel / Celular"
+              id="tel"
               required
+              class="input-form"
+              pattern="^([0-9]){9,20}$"
             />
+            <label
+              class="input-alert"
+              data-labelInput="tel"
+              for="tel"
+              >Ingrese un celular/teléfono válido sin espacios</label
+            >
             <textarea
               name="mensaje"
               placeholder="Escriba aquí su mensaje"
               required
+              id="msg"
+              class="input-form"
+              pattern="^.{4,256}$"
             ></textarea>
-
+            <label
+              class="input-alert"
+              data-labelInput="mensaje"
+              for="msg"
+              >Número de caracteres min 4 máx 256</label
+            >
             <input
               type="submit"
               value="Enviar"
@@ -564,7 +684,7 @@
     </div>
 
     <script
-      src="./js/main.js"
+      src="./js/main20221216.js"
       type="module"
     ></script>
   </body>

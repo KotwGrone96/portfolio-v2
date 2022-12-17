@@ -1,0 +1,71 @@
+.home-h1 {
+  animation: home-h1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s;
+  transform-origin: left;
+}
+
+.home-main-text p {
+  animation: home-p;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+}
+
+.home-span {
+  animation: home-span;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  display: block;
+}
+
+.img-container {
+  animation: home-img;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+}
+
+@keyframes home-img {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes home-h1 {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  75% {
+    transform: scale(1);
+  }
+}
+
+@keyframes home-p {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes home-span {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
