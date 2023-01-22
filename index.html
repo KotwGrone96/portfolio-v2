@@ -2,6 +2,11 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./favicon.svg"
+      type="image/x-icon"
+    />
     <meta
       http-equiv="X-UA-Compatible"
       content="IE=edge"
@@ -64,13 +69,76 @@
     />
     <link
       rel="stylesheet"
-      href="./css/style20221216.css"
+      href="./css/style20230113.css"
     />
     <link
       rel="stylesheet"
       href="./css/animation20221216.css"
     />
     <title>Nelson Gamero</title>
+    <!-- Android  -->
+    <meta
+      name="theme-color"
+      content="#72b626"
+    />
+    <meta
+      name="mobile-web-app-capable"
+      content="yes"
+    />
+    <!-- iOS -->
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Nelson Gamero Portfolio"
+    />
+    <meta
+      name="apple-mobile-web-app-capable"
+      content="yes"
+    />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="default"
+    />
+    <!-- iOS  -->
+    <link
+      href="./favicon.svg"
+      rel="apple-touch-icon"
+    />
+    <link
+      href="./favicon.svg"
+      rel="apple-touch-icon"
+      sizes="76x76"
+    />
+    <link
+      href="./favicon.svg"
+      rel="apple-touch-icon"
+      sizes="120x120"
+    />
+    <link
+      href="./favicon.svg"
+      rel="apple-touch-icon"
+      sizes="152x152"
+    />
+    <!-- Startup Image  -->
+    <link
+      href="./favicon.svg"
+      rel="apple-touch-startup-image"
+    />
+    <!-- Android  -->
+    <link
+      href="./favicon.svg"
+      rel="icon"
+      sizes="192x192"
+    />
+    <link
+      href="./favicon.svg"
+      rel="icon"
+      sizes="128x128"
+    />
+    <!-- Manifest.json  -->
+    <link
+      href="./manifest.json"
+      rel="manifest"
+    />
   </head>
   <body>
     <div class="modal-form">
@@ -342,6 +410,8 @@
                 <ul>
                   <li>GIT</li>
                   <li>TypeScript</li>
+                  <li>Jest.js</li>
+                  <li>Testing Library React</li>
                 </ul>
               </div>
             </div>
@@ -450,9 +520,6 @@
           </div>
         </section>
 
-        <!-- <section id="skills">
-          <h2>Habilidades</h2>
-        </section> -->
         <hr />
         <section id="portfolio">
           <h2>Portfolio</h2>
@@ -512,6 +579,31 @@
                   <p>Next.js, React.js, SASS, Markdown</p>
                 </div>
               </div>
+              <div class="project-item">
+                <div class="item-img">
+                  <img
+                    src="./assets/projects/free-games.jpg"
+                    alt="free-games"
+                  />
+                  <div class="img-hover">
+                    <h4>Free Games</h4>
+                    <a
+                      href="https://nelsongamerodev.com/free-games/"
+                      target="_blank"
+                      >Ver Proyecto</a
+                    >
+                    <a
+                      href="https://github.com/KotwGrone96/free-games"
+                      target="_blank"
+                      >Ver Github</a
+                    >
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span>Stack</span>
+                  <p>Vite, React.js, Tailwind</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="portfolio-projects">
@@ -537,6 +629,22 @@
                   <p>Next.js, React.js, Tailwind, PHP, MySQL</p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div class="portfolio-projects">
+            <h3>Colaboraciones <span>:</span></h3>
+            <div class="colab-container">
+              <a
+                class="colab-item"
+                href="https://pluscredit.com.ar/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/projects/pluscredit.png"
+                  alt="pluscredit"
+                />
+              </a>
             </div>
           </div>
         </section>
@@ -682,6 +790,7 @@
       </main>
       <footer class="footer">Copyright ©2022 By Nelson Gamero</footer>
     </div>
+    <script src="./sw-register.js"></script>
 
     <script
       src="./js/main20221216.js"

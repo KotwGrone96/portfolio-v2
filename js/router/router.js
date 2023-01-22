@@ -3,11 +3,11 @@ import { navBtnsLinks as linksBtns } from '../DOMElements/DOMElements.js';
 const router = (path) => {
   const currentPath = window.location.pathname;
   if (path === '/') {
-    window.history.pushState({}, 'path', path);
+    window.history.replaceState({}, 'path', path);
     return;
   }
   if (currentPath.includes(path)) return;
-  window.history.pushState({}, 'path', path);
+  window.history.replaceState({}, 'path', path);
 };
 
 const activeLink = () => {

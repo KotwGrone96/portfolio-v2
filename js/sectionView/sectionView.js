@@ -33,11 +33,7 @@ const handleActiveLinkAndRoute = (id) => {
       activeLink();
       return;
     }
-    // case 'skills': {
-    //   router(id);
-    //   activeLink();
-    //   return;
-    // }
+
     case 'portfolio': {
       router(id);
       activeLink();
@@ -56,6 +52,7 @@ const handleActiveLinkAndRoute = (id) => {
 const handleSectionView = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
+      console.log(entry);
       handleActiveLinkAndRoute(entry.target.id);
       return;
     }
@@ -63,7 +60,7 @@ const handleSectionView = (entries) => {
 };
 
 let options = {
-  threshold: 0.5,
+  threshold: 0.3,
 };
 
 let observer = new IntersectionObserver(handleSectionView, options);

@@ -465,9 +465,10 @@ hr {
 }
 
 .skills-table ul {
-  padding: 8px 0;
+  padding: 8px;
   background-color: var(--less-black);
-  min-height: 125px;
+  min-height: 150px;
+  width: 150px;
   margin-top: 8px;
 }
 
@@ -579,6 +580,9 @@ hr {
   }
   .skills-table h4 {
     font-size: 18px;
+  }
+  .skills-table ul {
+    width: 200px;
   }
   .skills-table ul li {
     font-size: 18px;
@@ -728,6 +732,38 @@ hr {
   font-weight: 700;
 }
 
+.colab-container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding-top: 16px;
+}
+
+.colab-item {
+  padding: 8px 4px;
+  background-color: var(--gray);
+  max-width: 150px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.colab-item:hover {
+  transform: scale(0.9);
+}
+
+.colab-item img {
+  width: 90%;
+  object-fit: cover;
+}
+
 /* ******************* SECCIÓN PORTFOLIO MOBILE Y DESKTOP************************* */
 
 @media screen and (min-width: 768px) {
@@ -738,6 +774,12 @@ hr {
   .project-item {
     max-width: 300px;
     min-height: 325px;
+  }
+  .colab-container {
+    justify-content: flex-start;
+  }
+  .colab-item {
+    max-width: 200px;
   }
 }
 

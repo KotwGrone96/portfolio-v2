@@ -1,0 +1,54 @@
+{
+  "name": "Nelson Gamero Portfolio",
+  "short_name": "Nelson Gamero",
+  "description": "Soy desarrollador Front-End en busca de ser Full-Stack. Siempre en constante aprendizaje y yendo hacia adelante! Me especializo en el dearrollo web para poder brindar soluciones óptimas a la hora de ayudar a una persona. Mi fortaleza es el Front-End ya que disfruto mucho creando interfaces agradables y llamativas. Una de mis principales tareas, aparte de brindar un aspecto idóneo a una web, es poder potenciar su llegada a más personas, por lo que dedico bastante tiempo a optimizar el SEO  de un proyecto.",
+  "icons": [
+    {
+      "src": "./favicon-48.svg",
+      "sizes": "48x48",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "./favicon-72.svg",
+      "sizes": "72x72",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "./favicon-96.svg",
+      "sizes": "96x96",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "./favicon-144.svg",
+      "sizes": "144x144",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "./favicon-168.svg",
+      "sizes": "168x168",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "./favicon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "./favicon-256.svg",
+      "sizes": "256x256",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "./favicon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": "/?utm_source=web_app_manifest",
+  "lang": "es",
+  "scope": "./",
+  "orientation": "portrait",
+  "display": "standalone",
+  "theme_color": "#151515",
+  "background_color": "#222222"
+}
